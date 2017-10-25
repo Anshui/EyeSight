@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/background">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/base_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/sex"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="@+id/sex_value"
+            app:layout_constraintBottom_toBottomOf="@+id/sex_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/base_info"
+            app:layout_constraintTop_toTopOf="@+id/name_value"
+            app:layout_constraintBottom_toBottomOf="@+id/name_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/age"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/sex"
+            app:layout_constraintTop_toTopOf="@+id/age_value"
+            app:layout_constraintBottom_toBottomOf="@+id/age_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/age"
+            app:layout_constraintTop_toTopOf="@+id/height_value"
+            app:layout_constraintBottom_toBottomOf="@+id/height_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/weight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/height"
+            app:layout_constraintTop_toTopOf="@+id/weight_value"
+            app:layout_constraintBottom_toBottomOf="@+id/weight_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/phone_number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/weight"
+            app:layout_constraintTop_toTopOf="@+id/phone_number"
+            app:layout_constraintBottom_toBottomOf="@+id/phone_number"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/sight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/sight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/phone"
+            app:layout_constraintTop_toTopOf="@+id/sight_value"
+            app:layout_constraintBottom_toBottomOf="@+id/sight_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/vision_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vision_problem"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/sight"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="@+id/vision_value"
+            app:layout_constraintBottom_toBottomOf="@+id/vision_value"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/base_info" />
+
+        <TextView
+            android:id="@+id/sex_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/name_value"
+            app:layout_constraintTop_toBottomOf="@+id/name_value" />
+
+        <TextView
+            android:id="@+id/age_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/sex_value"
+            app:layout_constraintTop_toBottomOf="@+id/sex_value" />
+
+        <TextView
+            android:id="@+id/height_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/age_value"
+            app:layout_constraintTop_toBottomOf="@+id/age_value" />
+
+        <TextView
+            android:id="@+id/weight_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/height_value"
+            app:layout_constraintTop_toBottomOf="@+id/height_value" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/weight_value"
+            app:layout_constraintTop_toBottomOf="@+id/weight_value" />
+
+        <TextView
+            android:id="@+id/sight_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+        <TextView
+            android:id="@+id/vision_value"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/user_text_background"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="@+id/sight_value"
+            app:layout_constraintTop_toBottomOf="@+id/sight_value" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/test_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/test_grade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/road_one"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/road_one"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/test_grade"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_result"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/horizontal_result" />
+
+        <TextView
+            android:id="@+id/road_two"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/road_two"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/road_one"
+            app:layout_constraintTop_toTopOf="@+id/vertiacl_result"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vertiacl_result"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/road_three"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/road_three"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/road_two"
+            app:layout_constraintTop_toTopOf="@+id/slope_up_result"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slope_up_result"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/road_four"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/road_four"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/road_three"
+            app:layout_constraintTop_toTopOf="@+id/slope_down_result"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slope_down_result"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/road_five"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/road_five"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/road_four"
+            app:layout_constraintTop_toTopOf="@+id/clockwise_result"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/clockwise_result"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/road_six"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/road_six"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@+id/road_five"
+            app:layout_constraintTop_toTopOf="@+id/anticlockwise_result"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/anticlockwise_result"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/horizontal_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@+id/road_one"
+            app:layout_constraintTop_toBottomOf="@+id/test_grade" />
+
+        <TextView
+            android:id="@+id/vertiacl_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/horizontal_result"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_result" />
+
+        <TextView
+            android:id="@+id/slope_up_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/vertiacl_result"
+            app:layout_constraintTop_toBottomOf="@+id/vertiacl_result" />
+
+        <TextView
+            android:id="@+id/slope_down_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/slope_up_result"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/slope_up_result" />
+
+        <TextView
+            android:id="@+id/clockwise_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/slope_down_result"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/slope_down_result" />
+
+        <TextView
+            android:id="@+id/anticlockwise_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/test_result_corner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/clockwise_result"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/clockwise_result" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="0dp"
+            android:text="@string/logout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/anticlockwise_result" />
+
+        <Button
+            android:id="@+id/look_result"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/look_result"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/logout" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

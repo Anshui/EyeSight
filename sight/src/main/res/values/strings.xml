@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">眼外肌检测系统</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome">一分钟眼外肌功能交互式测评系统</string>
+    <string name="notice">注意事项：</string>
+
+    <string name="notice_content">1.检测时确保头部水平，与检测设备保持规定的距离。\n2.检测过程中头部不动，眼睛跟随图片运动。\n3.确保完全看清图片后再点击图片，不要随意点击屏幕。\n4.做好准备后点击 TEST 按钮开始测试。</string>
+
+    <string name="title_activity_test">测试</string>
+
+    <!--TestActivity-->
+    <string name="start_test">开始测试</string>
+    <string name="result">查看结果</string>
+
+    <string name="prestart">即将开始：</string>
+
+    <string name="first_step">第一阶段测试结束，请稍作休息，准备好后按确定按钮进行下一阶段测试！</string>
+    <string name="second_step">第二阶段测试结束，请稍作休息，准备好后按确定按钮进行下一阶段测试！</string>
+    <string name="third_step">测试结束，请按查看结果查询测试结果！</string>
+    <string name="done">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--Result-->
+    <string name="test_result">检测结果：</string>
+    <string name="road_one">路径一（水平）</string>
+    <string name="road_two">路径二（垂直）</string>
+    <string name="road_three">路径三（斜上）</string>
+    <string name="road_four">路径四（斜下）</string>
+    <string name="road_five">路径五（顺时针）</string>
+    <string name="road_six">路径六（逆时针）</string>
+    <string name="exercise_evaluation">眼外肌运动能力评估：</string>
+
+    <string name="bulbar_muscle_movement_ability">球肌运动能力</string>
+
+    <string name="musculi_rectus_lateralis">外直肌</string>
+    <string name="musculi_rectus_medialis">内直肌</string>
+    <string name="musculi_obliquus_superior">上斜肌</string>
+    <string name="musculi_obliquus_inferior">下斜肌</string>
+    <string name="musculi_rectus_superior">上直肌</string>
+    <string name="musculi_rectus_inferior">下直肌</string>
+
+    <string name="title_activity_login">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="user_register">用户注册></string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!--Strings related to register-->
+    <string name="register">注册</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="height">身高：</string>
+    <string name="weight">体重：</string>
+    <string name="sex">性别：</string>
+    <string name="vision_problem">视力问题：</string>
+    <string name="sight">视力：</string>
+    <string name="age">年龄：</string>
+    <string name="phone">手机</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <!--Strings related to user-->
+    <string name="logout">注销登录</string>
+    <string name="user_activity_title">个人中心</string>
+    <string name="info">基本信息</string>
+    <string name="test_grade">测试成绩</string>
+    <string name="name">用户名：</string>
+    <string name="phone_number">手机：</string>
+    <string name="login_notice">测试信息将无法保存，若要保留测试结果请先登录。</string>
+    <string name="unlogin">尚未登录</string>
+    <string name="look_result">查看结果</string>
+
+</resources>
